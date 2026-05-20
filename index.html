@@ -176,6 +176,18 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);lin
 .foot{text-align:center;padding:40px var(--pad);color:var(--muted);font-size:12px;border-top:1px solid var(--border);margin-top:32px}
 .foot strong{color:var(--text);font-family:'Instrument Serif',serif;font-size:16px;display:block;margin-bottom:6px}
 
+/* ── CTA BUTTON ── */
+.cta-section{background:linear-gradient(135deg,var(--green-light) 0%,rgba(74,124,89,.1) 100%);border-top:3px solid var(--green);padding:48px var(--pad);text-align:center;margin:60px 0 0 0}
+.cta-section h3{font-family:'Instrument Serif',serif;font-size:clamp(24px,5vw,32px);color:var(--green);letter-spacing:-1px;margin-bottom:16px}
+.cta-section p{font-size:clamp(14px,3vw,16px);color:var(--muted);margin-bottom:24px;max-width:600px;margin-left:auto;margin-right:auto}
+.cta-btn{display:inline-block;background:var(--green);color:white;padding:14px 32px;border-radius:8px;font-weight:600;text-decoration:none;font-size:14px;letter-spacing:.5px;transition:all .3s;border:2px solid var(--green);cursor:pointer}
+.cta-btn:hover{background:white;color:var(--green);box-shadow:var(--shadow)}
+@media(min-width:768px){
+  .cta-section{padding:60px var(--pad);margin:80px 0 0 0}
+  .cta-section h3{font-size:40px}
+  .cta-btn{padding:16px 40px;font-size:15px}
+}
+
 /* ── ANIMATIONS ── */
 .reveal{opacity:0;transform:translateY(24px);transition:opacity .7s,transform .7s}
 .reveal.visible{opacity:1;transform:translateY(0)}
@@ -650,6 +662,13 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);lin
     <h3>Este documento é interno.</h3>
     <p>Na versão para investidores, você aparece como fundador operacional e core team — sem exposição dos 17%. O cap table será reformulado para captação profissional.</p>
   </div>
+</section>
+
+<!-- CTA FINAL -->
+<section class="cta-section">
+  <h3>Confira todos os números</h3>
+  <p>Acesse a planilha completa do DRE com projeções financeiras detalhadas para cada fase de crescimento.</p>
+  <a href="https://docs.google.com/spreadsheets/d/14L19ciNS9a1yH5OVJ5abwXnfpsyCO6SLY8IS7o1y700/edit?usp=sharing" target="_blank" rel="noopener noreferrer" class="cta-btn">Abrir Planilha DRE Completa</a>
 </section>
 
 <footer class="foot">
